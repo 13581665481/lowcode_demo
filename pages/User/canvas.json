@@ -606,6 +606,7 @@
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "btnSearch",
+              "onClick": "{{query_10.run(() => showAlert(), () => {})}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "按钮",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -621,7 +622,11 @@
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 19.8125,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
               "leftColumn": 40,
               "dynamicBindingPathList": [
                 {
